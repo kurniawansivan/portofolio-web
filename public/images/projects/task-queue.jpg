@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa" />
+  
+  <!-- Task Queue Visualization -->
+  <g transform="translate(100, 50)">
+    <!-- Queue Header -->
+    <rect x="0" y="0" width="600" height="60" rx="5" fill="#5B7B9A" />
+    <text x="300" y="35" font-family="Arial" font-size="20" fill="white" text-anchor="middle">Distributed Task Queue</text>
+    
+    <!-- Queue Items -->
+    <g transform="translate(20, 80)">
+      <!-- Queue Item 1 -->
+      <rect x="0" y="0" width="100" height="80" rx="5" fill="#E0E0E0" stroke="#2C4C6B" stroke-width="2" />
+      <text x="50" y="30" font-family="Arial" font-size="12" fill="#2C4C6B" text-anchor="middle">Task #1</text>
+      <text x="50" y="50" font-family="Arial" font-size="10" fill="#2C4C6B" text-anchor="middle">Priority: High</text>
+      <text x="50" y="65" font-family="Arial" font-size="10" fill="#2C4C6B" text-anchor="middle">Status: Pending</text>
+      
+      <!-- Queue Item 2 -->
+      <rect x="120" y="0" width="100" height="80" rx="5" fill="#E0E0E0" stroke="#2C4C6B" stroke-width="2" />
+      <text x="170" y="30" font-family="Arial" font-size="12" fill="#2C4C6B" text-anchor="middle">Task #2</text>
+      <text x="170" y="50" font-family="Arial" font-size="10" fill="#2C4C6B" text-anchor="middle">Priority: Medium</text>
+      <text x="170" y="65" font-family="Arial" font-size="10" fill="#2C4C6B" text-anchor="middle">Status: Running</text>
+      
+      <!-- Queue Item 3 -->
+      <rect x="240" y="0" width="100" height="80" rx="5" fill="#E0E0E0" stroke="#2C4C6B" stroke-width="2" />
+      <text x="290" y="30" font-family="Arial" font-size="12" fill="#2C4C6B" text-anchor="middle">Task #3</text>
+      <text x="290" y="50" font-family="Arial" font-size="10" fill="#2C4C6B" text-anchor="middle">Priority: Low</text>
+      <text x="290" y="65" font-family="Arial" font-size="10" fill="#2C4C6B" text-anchor="middle">Status: Pending</text>
+      
+      <!-- Queue Item 4 -->
+      <rect x="360" y="0" width="100" height="80" rx="5" fill="#E0E0E0" stroke="#2C4C6B" stroke-width="2" />
+      <text x="410" y="30" font-family="Arial" font-size="12" fill="#2C4C6B" text-anchor="middle">Task #4</text>
+      <text x="410" y="50" font-family="Arial" font-size="10" fill="#2C4C6B" text-anchor="middle">Priority: High</text>
+      <text x="410" y="65" font-family="Arial" font-size="10" fill="#2C4C6B" text-anchor="middle">Status: Pending</text>
+      
+      <!-- Queue Item 5 -->
+      <rect x="480" y="0" width="100" height="80" rx="5" fill="#E0E0E0" stroke="#2C4C6B" stroke-width="2" />
+      <text x="530" y="30" font-family="Arial" font-size="12" fill="#2C4C6B" text-anchor="middle">Task #5</text>
+      <text x="530" y="50" font-family="Arial" font-size="10" fill="#2C4C6B" text-anchor="middle">Priority: Medium</text>
+      <text x="530" y="65" font-family="Arial" font-size="10" fill="#2C4C6B" text-anchor="middle">Status: Pending</text>
+    </g>
+    
+    <!-- Worker Nodes -->
+    <g transform="translate(20, 200)">
+      <!-- Worker 1 -->
+      <rect x="60" y="0" width="120" height="100" rx="5" fill="#5B7B9A" />
+      <text x="120" y="30" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Worker #1</text>
+      <rect x="80" y="50" width="80" height="30" rx="5" fill="#E0E0E0" />
+      <text x="120" y="70" font-family="Arial" font-size="12" fill="#2C4C6B" text-anchor="middle">Processing...</text>
+      
+      <!-- Worker 2 -->
+      <rect x="240" y="0" width="120" height="100" rx="5" fill="#5B7B9A" />
+      <text x="300" y="30" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Worker #2</text>
+      <rect x="260" y="50" width="80" height="30" rx="5" fill="#E0E0E0" />
+      <text x="300" y="70" font-family="Arial" font-size="12" fill="#2C4C6B" text-anchor="middle">Idle</text>
+      
+      <!-- Worker 3 -->
+      <rect x="420" y="0" width="120" height="100" rx="5" fill="#5B7B9A" />
+      <text x="480" y="30" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Worker #3</text>
+      <rect x="440" y="50" width="80" height="30" rx="5" fill="#E0E0E0" />
+      <text x="480" y="70" font-family="Arial" font-size="12" fill="#2C4C6B" text-anchor="middle">Processing...</text>
+    </g>
+    
+    <!-- Connection Lines -->
+    <path d="M120,160 L120,200" stroke="#5B7B9A" stroke-width="2" stroke-dasharray="5,5" />
+    <path d="M290,160 L300,200" stroke="#5B7B9A" stroke-width="2" stroke-dasharray="5,5" />
+    <path d="M410,160 L480,200" stroke="#5B7B9A" stroke-width="2" stroke-dasharray="5,5" />
+  </g>
+</svg>

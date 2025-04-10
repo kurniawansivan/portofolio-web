@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#F8F9FA" />
+  
+  <!-- Task Queue Visualization -->
+  <g transform="translate(50, 100)">
+    <!-- Queue Container -->
+    <rect x="0" y="0" width="500" height="100" rx="10" fill="#E0E0E0" stroke="#5B7B9A" stroke-width="3"/>
+    
+    <!-- Task Items -->
+    <rect x="20" y="20" width="80" height="60" rx="5" fill="#5B7B9A"/>
+    <rect x="120" y="20" width="80" height="60" rx="5" fill="#5B7B9A"/>
+    <rect x="220" y="20" width="80" height="60" rx="5" fill="#5B7B9A"/>
+    <rect x="320" y="20" width="80" height="60" rx="5" fill="#5B7B9A"/>
+    <rect x="420" y="20" width="60" height="60" rx="5" fill="#5B7B9A" fill-opacity="0.3" stroke="#5B7B9A" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Arrows -->
+    <path d="M105,50 L115,50" stroke="#2C4C6B" stroke-width="3" />
+    <path d="M115,50 L110,45" stroke="#2C4C6B" stroke-width="3" />
+    <path d="M115,50 L110,55" stroke="#2C4C6B" stroke-width="3" />
+    
+    <path d="M205,50 L215,50" stroke="#2C4C6B" stroke-width="3" />
+    <path d="M215,50 L210,45" stroke="#2C4C6B" stroke-width="3" />
+    <path d="M215,50 L210,55" stroke="#2C4C6B" stroke-width="3" />
+    
+    <path d="M305,50 L315,50" stroke="#2C4C6B" stroke-width="3" />
+    <path d="M315,50 L310,45" stroke="#2C4C6B" stroke-width="3" />
+    <path d="M315,50 L310,55" stroke="#2C4C6B" stroke-width="3" />
+    
+    <path d="M405,50 L415,50" stroke="#2C4C6B" stroke-width="3" />
+    <path d="M415,50 L410,45" stroke="#2C4C6B" stroke-width="3" />
+    <path d="M415,50 L410,55" stroke="#2C4C6B" stroke-width="3" />
+  </g>
+  
+  <!-- Worker Nodes -->
+  <g transform="translate(100, 250)">
+    <rect x="0" y="0" width="80" height="80" rx="10" fill="#2C4C6B"/>
+    <text x="40" y="45" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Worker 1</text>
+  </g>
+  
+  <g transform="translate(260, 250)">
+    <rect x="0" y="0" width="80" height="80" rx="10" fill="#2C4C6B"/>
+    <text x="40" y="45" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Worker 2</text>
+  </g>
+  
+  <g transform="translate(420, 250)">
+    <rect x="0" y="0" width="80" height="80" rx="10" fill="#2C4C6B"/>
+    <text x="40" y="45" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Worker 3</text>
+  </g>
+  
+  <!-- Connection Lines -->
+  <path d="M140,250 L60,200" stroke="#5B7B9A" stroke-width="2" fill="none"/>
+  <path d="M300,250 L260,200" stroke="#5B7B9A" stroke-width="2" fill="none"/>
+  <path d="M460,250 L360,200" stroke="#5B7B9A" stroke-width="2" fill="none"/>
+  
+  <!-- Title -->
+  <text x="300" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#2C4C6B" text-anchor="middle">
+    Distributed Task Queue System
+  </text>
+</svg>

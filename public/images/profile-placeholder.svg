@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Background circle -->
+  <circle cx="150" cy="150" r="150" fill="#5B7B9A" />
+  
+  <!-- Stylized profile silhouette -->
+  <circle cx="150" cy="120" r="50" fill="#E0E0E0" />
+  <path d="M150,180 C110,180 75,210 70,250 C90,280 120,300 150,300 C180,300 210,280 230,250 C225,210 190,180 150,180 Z" fill="#E0E0E0" />
+</svg>

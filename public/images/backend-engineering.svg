@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Server Rack -->
+  <g transform="translate(150, 100)">
+    <!-- Rack Outline -->
+    <rect x="0" y="0" width="500" height="400" rx="10" fill="#e0e0e0" stroke="#5B7B9A" stroke-width="5"/>
+    
+    <!-- Server Units -->
+    <rect x="20" y="30" width="460" height="60" rx="5" fill="#5B7B9A"/>
+    <rect x="30" y="40" width="20" height="10" rx="2" fill="#2C4C6B"/>
+    <rect x="60" y="40" width="20" height="10" rx="2" fill="#2C4C6B"/>
+    <circle cx="440" cy="60" r="5" fill="#4CAF50"/>
+    <circle cx="420" cy="60" r="5" fill="#FFC107"/>
+    
+    <rect x="20" y="110" width="460" height="60" rx="5" fill="#5B7B9A"/>
+    <rect x="30" y="120" width="20" height="10" rx="2" fill="#2C4C6B"/>
+    <rect x="60" y="120" width="20" height="10" rx="2" fill="#2C4C6B"/>
+    <circle cx="440" cy="140" r="5" fill="#4CAF50"/>
+    <circle cx="420" cy="140" r="5" fill="#FFC107"/>
+    
+    <rect x="20" y="190" width="460" height="60" rx="5" fill="#5B7B9A"/>
+    <rect x="30" y="200" width="20" height="10" rx="2" fill="#2C4C6B"/>
+    <rect x="60" y="200" width="20" height="10" rx="2" fill="#2C4C6B"/>
+    <circle cx="440" cy="220" r="5" fill="#4CAF50"/>
+    <circle cx="420" cy="220" r="5" fill="#4CAF50"/>
+    
+    <rect x="20" y="270" width="460" height="60" rx="5" fill="#5B7B9A"/>
+    <rect x="30" y="280" width="20" height="10" rx="2" fill="#2C4C6B"/>
+    <rect x="60" y="280" width="20" height="10" rx="2" fill="#2C4C6B"/>
+    <circle cx="440" cy="300" r="5" fill="#F44336"/>
+    <circle cx="420" cy="300" r="5" fill="#FFC107"/>
+    
+    <!-- Connection Lines -->
+    <path d="M500,60 C550,60 550,140 500,140" stroke="#5B7B9A" stroke-width="3" fill="none"/>
+    <path d="M500,140 C550,140 550,220 500,220" stroke="#5B7B9A" stroke-width="3" fill="none"/>
+    <path d="M500,220 C550,220 550,300 500,300" stroke="#5B7B9A" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Code Snippets -->
+  <g transform="translate(600, 150)">
+    <rect x="0" y="0" width="150" height="100" rx="5" fill="#2C4C6B"/>
+    <text x="10" y="20" font-family="monospace" font-size="10" fill="#ffffff">const server = new</text>
+    <text x="10" y="35" font-family="monospace" font-size="10" fill="#ffffff">ExpressServer();</text>
+    <text x="10" y="50" font-family="monospace" font-size="10" fill="#ffffff"></text>
+    <text x="10" y="65" font-family="monospace" font-size="10" fill="#ffffff">server.listen(3000);</text>
+  </g>
+  
+  <g transform="translate(50, 200)">
+    <rect x="0" y="0" width="150" height="100" rx="5" fill="#2C4C6B"/>
+    <text x="10" y="20" font-family="monospace" font-size="10" fill="#ffffff">class Database {</text>
+    <text x="10" y="35" font-family="monospace" font-size="10" fill="#ffffff">  connect() {</text>
+    <text x="10" y="50" font-family="monospace" font-size="10" fill="#ffffff">    // DB logic</text>
+    <text x="10" y="65" font-family="monospace" font-size="10" fill="#ffffff">  }</text>
+    <text x="10" y="80" font-family="monospace" font-size="10" fill="#ffffff">}</text>
+  </g>
+  
+  <!-- Cloud Symbol -->
+  <g transform="translate(600, 300)">
+    <path d="M25,60 A20,20 0 0,1 45,40 A20,20 0 0,1 65,60 A20,20 0 0,1 85,40 A20,20 0 0,1 105,60 L105,60 L105,70 A10,10 0 0,1 95,80 L35,80 A10,10 0 0,1 25,70 Z" fill="#5B7B9A"/>
+  </g>
+</svg>

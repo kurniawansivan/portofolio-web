@@ -1,0 +1,77 @@
+:root {
+  /* Theme Colors */
+  --color-primary: #5B7B9A; /* Soft blue */
+  --color-secondary: #E0E0E0; /* Soft grey */
+  --color-accent: #2C4C6B; /* Darker blue for contrast */
+  --color-background: #F8F9FA; /* Light background */
+  --color-text: #333333; /* Dark text for readability */
+  --color-text-light: #FFFFFF; /* Light text for dark backgrounds */
+  --color-border: #D1D9E6; /* Soft border color */
+  
+  /* Section Colors */
+  --section-primary-bg: var(--color-primary);
+  --section-secondary-bg: var(--color-secondary);
+  --section-light-bg: var(--color-background);
+  
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 48px;
+}
+
+/* UIkit theme overrides */
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: var(--color-secondary);
+}
+
+.uk-navbar-nav > li > a {
+  color: var(--color-text);
+}
+
+.uk-navbar-nav > li:hover > a, 
+.uk-navbar-nav > li > a:focus, 
+.uk-navbar-nav > li.uk-active > a {
+  color: var(--color-primary);
+}
+
+.uk-section-primary {
+  background: var(--color-primary);
+}
+
+.uk-section-secondary {
+  background: var(--color-accent);
+}
+
+.uk-button-primary {
+  background-color: var(--color-primary);
+}
+
+.uk-button-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.uk-card-default {
+  border: 1px solid var(--color-border);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.uk-card-primary {
+  background-color: var(--color-primary);
+}
+
+.uk-card-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+}
+
+/* Custom animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
