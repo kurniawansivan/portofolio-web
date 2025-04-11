@@ -65,6 +65,53 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Consistent card sizing for all devices */
+.uk-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.uk-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.uk-card-media-top {
+  overflow: hidden;
+}
+
+.uk-card-media-top img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .uk-card {
+    margin-bottom: 15px;
+  }
+  
+  .uk-card-title {
+    font-size: 1.2rem;
+  }
+  
+  .uk-grid-match > .uk-grid-margin {
+    margin-top: 15px;
+  }
+  
+  /* Equal height cards in grid rows */
+  .uk-grid-match > div {
+    display: flex;
+  }
+  
+  .uk-grid-match > div > .uk-card {
+    flex: 1;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

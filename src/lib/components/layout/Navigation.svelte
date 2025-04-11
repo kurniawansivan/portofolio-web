@@ -35,18 +35,18 @@
       </ul>
       
       <!-- Mobile Toggle -->
-      <a class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon href="#" uk-toggle="target: #mobile-menu"></a>
+      <a class="uk-navbar-toggle uk-hidden@m mobile-toggle" uk-navbar-toggle-icon href="#" uk-toggle="target: #mobile-menu"></a>
     </div>
   </nav>
   
   <!-- Mobile Menu -->
   <div id="mobile-menu" uk-offcanvas="mode: reveal; overlay: true">
-    <div class="uk-offcanvas-bar">
+    <div class="uk-offcanvas-bar mobile-menu-bar">
       <button class="uk-offcanvas-close" type="button" uk-close></button>
-      <h3>{portfolioConfig.name}</h3>
-      <p class="uk-text-muted">{portfolioConfig.title}</p>
+      <h3 class="mobile-menu-title">{portfolioConfig.name}</h3>
+      <p class="uk-text-muted mobile-menu-subtitle">{portfolioConfig.title}</p>
       
-      <ul class="uk-nav uk-nav-default">
+      <ul class="uk-nav uk-nav-default mobile-menu-nav">
         {#each navItems as item}
           <li>
             <a href={item.href} uk-scroll="offset: 100" uk-toggle="target: #mobile-menu">{item.label}</a>
@@ -73,5 +73,39 @@
   
   .uk-logo {
     font-size: 1.2rem;
+  }
+  
+  /* Mobile menu styling */
+  .mobile-toggle {
+    color: var(--color-text) !important; /* Ensure visible toggle icon */
+  }
+  
+  .mobile-menu-bar {
+    background-color: #f8f9fa !important; /* Light background */
+    color: #333333 !important; /* Dark text for contrast */
+  }
+  
+  .mobile-menu-title {
+    color: #333333 !important;
+    margin-bottom: 5px;
+  }
+  
+  .mobile-menu-subtitle {
+    color: #555555 !important;
+  }
+  
+  .mobile-menu-nav > li > a {
+    color: #333333 !important;
+    font-weight: 500;
+  }
+  
+  .mobile-menu-nav > li > a:hover {
+    color: var(--color-primary) !important;
+    background-color: rgba(91, 123, 154, 0.1);
+  }
+  
+  /* Make close button visible */
+  .uk-offcanvas-close {
+    color: #333333 !important;
   }
 </style>

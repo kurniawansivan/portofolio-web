@@ -6,6 +6,7 @@
   --color-background: #F8F9FA; /* Light background */
   --color-text: #333333; /* Dark text for readability */
   --color-text-light: #FFFFFF; /* Light text for dark backgrounds */
+  --color-text-contrast: #333333; /* Contrast text for light backgrounds */
   --color-border: #D1D9E6; /* Soft border color */
   
   /* Section Colors */
@@ -64,6 +65,52 @@
 .uk-card-secondary {
   background-color: var(--color-secondary);
   color: var(--color-text);
+}
+
+/* Light background with dark text */
+.uk-section-primary,
+.uk-section-secondary {
+  color: var(--color-text-light);
+}
+
+/* Ensure mobile readability */
+@media (max-width: 960px) {
+  /* Ensure text has sufficient contrast */
+  .uk-light, .uk-section-primary {
+    color: var(--color-text-light) !important;
+  }
+  
+  .uk-section-primary h1,
+  .uk-section-primary h2,
+  .uk-section-primary h3,
+  .uk-section-primary h4,
+  .uk-section-primary h5,
+  .uk-section-primary h6,
+  .uk-section-secondary h1,
+  .uk-section-secondary h2,
+  .uk-section-secondary h3,
+  .uk-section-secondary h4,
+  .uk-section-secondary h5,
+  .uk-section-secondary h6 {
+    color: var(--color-text-light) !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+  
+  /* For lighter backgrounds, ensure dark text */
+  .uk-section-default,
+  .uk-section-muted {
+    color: var(--color-text) !important;
+  }
+  
+  /* Fix paragraphs and text in cards for better readability */
+  .uk-card {
+    color: var(--color-text) !important;
+  }
+  
+  .uk-card-primary, 
+  .uk-card-secondary {
+    color: var(--color-text-light) !important;
+  }
 }
 
 /* Custom animations */
