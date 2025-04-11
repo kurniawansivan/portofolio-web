@@ -72,9 +72,9 @@ export class PortfolioService {
           '+6281529921965',
           'Bali, Indonesia',
           {
-            github: 'https://github.com/ivandev',
-            linkedin: 'https://linkedin.com/in/ivandev',
-            twitter: 'https://twitter.com/ivandev'
+            github: '',
+            linkedin: '',
+            twitter: ''
           }
         )
       ),
@@ -83,15 +83,16 @@ export class PortfolioService {
           'p1',
           'Onboarding Asset Upload',
           'This project automates the onboarding of assets to Azure Blob Storage, Vusion Rail API, and Korona Cloud API. It integrates with Microsoft OneDrive to retrieve files, Azure Blob Storage for file uploads, and third-party APIs for publishing and tagging assets dynamically',
-          '/projects/task-queue.jpg',
+          '',
           ['Python', 'REST API', 'Docker', 'Azure'],
-          'https://github.com/kurniawansivan/asset_script'
+          null,
+          null
         ),
         new Project(
           'p2',
           'API Gateway Middleware',
           'Built a flexible API Gateway for microservices, handling authentication, rate limiting, and dynamic request routing. Secured endpoints with JWT/OAuth2, implemented traffic control to ensure stability, and designed the system for easy scalability and integration of new services.',
-          '/projects/api-gateway.jpg',
+          '',
           ['Python', 'REST API', 'Docker', 'Azure'],
           null,
           null
@@ -100,7 +101,7 @@ export class PortfolioService {
           'p3',
           'Data Analystics',
           'Developed a data analytics system for a People Analyzer to extract insights on user behavior, performance, and engagement. Leveraged structured and unstructured data to identify trends, detect anomalies, and support decision-making. Designed visual metrics and reports to monitor key metrics such as attendance, productivity, and sentiment over time.',
-          '/projects/data-pipeline.jpg',
+          '',
           ['Python','Pandas', 'NumPy', 'Mathplotlib'],
           null,
           null
@@ -116,16 +117,21 @@ export class PortfolioService {
         new Skill('s10', 'Microsoft Azure', 'cloud', 4, 'azure'),
         new Skill('s11', 'CI/CD', 'devops', 4, 'cicd'),
         new Skill('s12', 'REST API Design', 'architecture', 5, 'api'),
-        new Skill('s13', 'Microservices', 'architecture', 5, 'microservices'),
+        new Skill('s13', 'Database Schema', 'architecture', 5, 'databaseschema'),
+        new Skill('s14', 'SQLAlchemy', 'database', 4, 'sqlalchemy'),
+        new Skill('s15', 'Postman', 'devops', 5, 'postman'),
+        new Skill('s16', 'Vercel', 'cloud', 5, 'vercel'),
+        new Skill('s16', 'Heroku', 'cloud', 5, 'heroku'),
+        new Skill('s17', 'Authentication', 'architecture', 5, 'authentication'),
       ],
       experiences: [
         new Experience(
           'e1',
-          'TechCorp Inc.',
+          'PT. Wolkk Cloud Development',
           'Backend Engineer',
           '2024-07-01',
           '',
-          'Leading backend development for distributed systems',
+          'Backend development for distributed systems',
           [
             'Build and maintain server-side applications, APIs, and databases',
             'Ensure backend systems are fast, secure, and scalable',

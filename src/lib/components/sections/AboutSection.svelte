@@ -15,7 +15,7 @@
           <img 
             src="/images/projects/profil_ivan.jpg" 
             alt="{portfolioConfig.name} - Backend Engineer" 
-            class="profile-image uk-border-circle"
+            class="profile-image"
             width="300" 
             height="300"
           >
@@ -60,6 +60,7 @@
     border: 6px solid var(--color-primary);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
+    border-radius: 8px; /* Adding a slight rounded corner for modern look */
   }
 
   .profile-image:hover {
